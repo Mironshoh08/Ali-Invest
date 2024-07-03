@@ -1,0 +1,29 @@
+All Done Components
+page #1
+navbar Done ✅
+hero Done ✅
+section1 Done ✅
+Section 2 Done ✅
+Section 3 Done ✅
+Section 4 Done ✅
+Section 5 Done ✅
+Section 6 Done ✅
+Section 7 Done ✅
+Section 8 Done ✅
+Section 9 Done ✅
+footer Done ✅
+
+
+page #2
+Navbar Done ✅
+Hero Done ✅
+Section 2 Done ✅
+Section 3 Done ✅
+Section 4 Done ✅
+Section 5 Done ✅
+Section 6 Done ✅
+Section 7 Done ✅
+Section 8 Done ✅
+Section 9 Done ✅
+footer Done ✅
+

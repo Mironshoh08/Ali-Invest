@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Invest</title>
+    <link rel="stylesheet" href="media/media.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="Lib/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="images/Frame.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="body">
+    <!-- theme start -->
+    <!--     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </symbol>
+    </svg>
+    <div
+      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
+    >
+      <button
+        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)"
+      >
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+          <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-end shadow"
+        aria-labelledby="bd-theme-text"
+      >
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="light"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="dark"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="auto"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div> -->
+    <!-- theme end -->
+    <!-- navbar start -->
+    <!-- class for navbar  navbar-dark bg-dark -->
+    <nav class="navbar header__navbar" aria-label="Dark offcanvas navbar">
+      <div class="container navbar_container">
+        <a class="navbar-brand" href="#"
+          ><img class="navbar_logo" src="images/Logo.svg" alt=""
+        /></a>
+        <div class="navbar_div1" style="display: flex">
+          <div class="nav-wrapper1">
+            <div class="sl-nav">
+              <ul>
+                <li id="lang_li">
+                  <b class="li_display" id="li_display">Russian</b>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                  <ul class="lang_ul langWrap">
+                    <a
+                      class="li_text form_link navbar_link1 active5"
+                      id="navbar__link1"
+                      language="russian"
+                      href="#!"
+                      onclick="function3()"
+                    >
+                      <img width="40px" src="images/Russia.svg" alt="" />
+                      Russian</a
+                    >
+                    <a
+                      class="li_text form_link navbar_link2"
+                      id="navbar__link2"
+                      onclick="function4()"
+                      language="english"
+                      href="#!"
+                    >
+                      <img width="40px" src="images/English.png" alt="" />
+                      English</a
+                    >
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark"
+            aria-controls="offcanvasNavbarDark"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbarDark"
+          aria-labelledby="offcanvasNavbarDarkLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+              <img class="navbar_logo" src="images/Logo.svg" alt="" />
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-dark"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link change_lang-txt1"
+                  style="font-weight: 500 !important"
+                  href="#!"
+                  >О нас</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link change_lang-txt2"
+                  style="font-weight: 500 !important"
+                  href="#!"
+                  >Контакт</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active1 change_lang-txt3"
+                  style="font-weight: 500 !important"
+                  href="#!"
+                  >Я Стартап</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link change_lang-txt4"
+                  style="font-weight: 500 !important"
+                  href="Page-2/index.html"
+                  >Я Инвестор</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- hero start -->
+    <div class="hero">
+      <div class="container hero__container">
+        <div class="row hero_row">
+          <div class="col-xl-6">
+            <p>
+              <span class="hero_title change_lang-txt5">
+                Привлечь инвестиции теперь
+              </span>
+              <span class="hero_title_span change_lang-txt6">проще</span>
+            </p>
+            <p class="hero__context change_lang-txt7">
+              Помогаем стартапам привлекать инвестиции, собирая 100+ венчурных
+              фондов, бизнес-ангелов и частных инвесторов в одном месте
+            </p>
+            <div>
+              <div class="hero_div1">
+                <a class="hero__btn change_lang-txt8" href="#!"
+                  >Привлечь инвестиции</a
+                >
+                <a class="hero__btn1 change_lang-txt9" href="Page-2/index.html"
+                  >Вы инвестор?</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 hero_column2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- hero end -->
+    <!-- main start -->
+    <div class="main">
+      <div class="section1">
+        <div class="container section1__container" style="margin: 0 auto">
+          <div
+            class="row"
+            style="
+              justify-content: space-between;
+              display: flex;
+              row-gap: 15px;
+              margin: 0 auto;
+            "
+          >
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 section1_column col11"
+              data-speed="400"
+            >
+              <p class="section1_column-text1 change_lang-txt10">
+                Сотни инвесторов
+              </p>
+              <p class="section1_column-text2 change_lang-txt11">
+                Активные инвесторы в поисках перспективных стартапов
+              </p>
+              <img src="images/people.svg" alt="" />
+            </div>
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 section1_column col21"
+            >
+              <p class="section1_column-text1 change_lang-txt12">
+                Экономия времени
+              </p>
+              <p class="section1_column-text2 change_lang-txt13">
+                Умещаем долгий процесс поиска инвестиций в одном месте
+              </p>
+              <img src="images/time.svg" alt="" />
+            </div>
+            <div
+              class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 section1_column col31"
+            >
+              <p class="section1_column-text1 change_lang-txt14">
+                Оплата за результат
+              </p>
+              <p class="section1_column-text2 change_lang-txt15">
+                Вы платите лишь за финальный результат по итогам нашей работы
+              </p>
+              <img src="images/bag.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="row"
+            style="
+              justify-content: space-between;
+              row-gap: 15px;
+              margin: 0 auto;
+            "
+          >
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 section1_column col11"
+              data-speed="400"
+            >
+              <p class="section1_column-text1 change_lang-txt16">
+                Целевая аудитория
+              </p>
+              <p class="section1_column-text2 change_lang-txt17">
+                Ваш проект будет предложен инвесторам, которым он будет
+                интересен
+              </p>
+              <img src="images/stack.svg" alt="" />
+            </div>
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 section1_column col21"
+              data-speed="400"
+            >
+              <p
+                class="section1_column-text1 section1_column-text4 change_lang-txt18"
+              >
+                Сопровождение
+              </p>
+              <p
+                class="section1_column-text2 section1_column-text3 change_lang-txt19"
+              >
+                Составим предложение и материалы, чтобы инвестор понял все
+                тонкости
+              </p>
+              <img src="images/board.svg" alt="" />
+            </div>
+            <div
+              class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 section1_column col31 column123"
+              data-speed="400"
+            >
+              <p class="section1_column-text1 change_lang-txt20">
+                Оптимизация усилий
+              </p>
+              <p class="section1_column-text2 change_lang-txt21">
+                Расскажите о себе один раз, мы сделаем теплое интро десяткам
+                инвесторов
+              </p>
+              <img src="images/line.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="container section2_container">
+          <div>
+            <p class="section2__title change_lang-txt22">Как это работает?</p>
+          </div>
+          <div
+            #swiperRef=""
+            style="
+              position: relative;
+              height: 536px;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+            "
+            class="swiper mySwiper section2_div"
+          >
+            <div class="swiper-wrapper" style="position: relative">
+              <div class="swiper-slide">
+                <div class="row section2_row">
+                  <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                    style="
+                      align-items: center;
+                      justify-content: center;
+                      display: flex;
+                    "
+                  >
+                    <img class="slider_image" src="images/Image7.png" alt="" />
+                  </div>
+                  <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 swiper_col"
+                    style="
+                      justify-content: center;
+                      display: flex;
+                      flex-direction: column;
+                      padding: 20px;
+                    "
+                  >
+                    <p class="swiper_text change_lang-txt23">
+                      Заполнение формы
+                    </p>
+                    <p class="swiper_text1 change_lang-txt24">
+                      Удобная форма поможет первично ознакомиться с вашим
+                      проектом и проанализировать его
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row section2_row">
+                  <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                    style="
+                      align-items: center;
+                      justify-content: center;
+                      display: flex;
+                    "
+                  >
+                    <img class="slider_image" src="images/Image7.png" alt="" />
+                  </div>
+                  <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 swiper_col"
+                    style="
+                      justify-content: center;
+                      display: flex;
+                      flex-direction: column;
+                      padding: 20px;
+                    "
+                  >
+                    <p class="swiper_text change_lang-txt25">оставьте заявку</p>
+                    <p class="swiper_text1 change_lang-txt26">
+                      Далеко-далеко за словесными горами в стране, гласных и
+                      согласных живут рыбные тексты. Вдали жизни маленькая
+                      использовало не.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row section2_row">
+                  <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                    style="
+                      align-items: center;
+                      justify-content: center;
+                      display: flex;
+                    "
+                  >
+                    <img class="slider_image" src="images/Image7.png" alt="" />
+                  </div>
+                  <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 swiper_col"
+                    style="
+                      justify-content: center;
+                      display: flex;
+                      flex-direction: column;
+                      padding: 20px;
+                    "
+                  >
+                    <p class="swiper_text change_lang-txt27">Получите файлы</p>
+                    <p class="swiper_text1 change_lang-txt28">
+                      Далеко-далеко за словесными горами в стране гласных и
+                      согласных живут, рыбные тексты. Букв безорфографичный
+                      грустный она родного!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row section2_row">
+                  <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                    style="
+                      align-items: center;
+                      justify-content: center;
+                      display: flex;
+                    "
+                  >
+                    <img class="slider_image" src="images/Image7.png" alt="" />
+                  </div>
+                  <div
+                    class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 swiper_col"
+                    style="
+                      justify-content: center;
+                      display: flex;
+                      flex-direction: column;
+                      padding: 20px;
+                    "
+                  >
+                    <p class="swiper_text change_lang-txt29">
+                      остались вопросы
+                    </p>
+                    <div>
+                      <div>
+                        <i class="fa-brands fa-whatsapp fa-lg"></i>
+                        <a class="swiper_text1" href="#!">+99414149848465</a>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-telegram fa-lg"></i>
+                        <a class="swiper_text1" href="#!">tme/link</a>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-instagram fa-lg"></i>
+                        <a class="swiper_text1" href="#!">instagram/awefe</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar slider_scroll"></div>
+            <div class="swiper-button-next" id="nextslide"></div>
+            <div class="swiper-pagination step_pagination"></div>
+            <div class="swiper-button-prev" id="prevslide"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section3">
+        <div class="container section3__container timer">
+          <p class="section3_title change_lang-txt30">На нашей платформе</p>
+          <hr class="section3_hr" />
+          <div class="row" style="row-gap: 15px; display: flex">
+            <div
+              class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12 section3_column"
+            >
+              <div class="section3_div">
+                <span class="section3_num" data-num="80">80</span
+                ><span class="section3_num1">+</span>
+              </div>
+              <p class="section3_subtitle change_lang-txt31">Cтартапов</p>
+              <p class="section3_text change_lang-txt32">
+                Присоединились к Angel Invests в поиске финансирования
+              </p>
+            </div>
+            <div
+              class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12 section3_column"
+            >
+              <div class="section3_div">
+                <span class="section3_num" data-num="30">30</span
+                ><span class="section3_num1">+</span>
+              </div>
+              <p class="section3_subtitle change_lang-txt33">Новых проектов</p>
+              <p class="section3_text change_lang-txt34">
+                Ежемесячно подключается к нам для получения помощи в привлечении
+                инвестиций
+              </p>
+            </div>
+            <div
+              class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 section3_column"
+            >
+              <div class="section3_div">
+                <span class="section3_num" data-num="100">100</span
+                ><span class="section3_num1">+</span>
+              </div>
+              <p class="section3_subtitle change_lang-txt35">Инвесторов</p>
+              <p class="section3_text change_lang-txt36">
+                Сотрудничает с нами и доверяет в подборе перспективных проектов
+              </p>
+            </div>
+          </div>
+          <hr class="section3_hr" />
+        </div>
+      </div>
+      <div class="section4">
+        <div class="container section4__container">
+          <div style="padding-bottom: 15px">
+            <p class="section4_title">Наши партнеры</p>
+          </div>
+
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper_slides swiper__slide">
+                <img
+                  class="swiper__image"
+                  style="width: 100%"
+                  src="images/icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide swiper_slides swiper__slide">
+                <img
+                  style="width: 100%"
+                  class="swiper__image"
+                  src="images/icon2.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide swiper_slides swiper__slide">
+                <img
+                  style="width: 100%"
+                  class="swiper__image"
+                  src="images/icon3.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide swiper_slides swiper__slide">
+                <img
+                  style="width: 100%"
+                  class="swiper__image"
+                  src="images/icon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide swiper_slides swiper__slide">
+                <img
+                  style="width: 100%"
+                  class="swiper__image"
+                  src="images/icon2.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide swiper_slides swiper__slide">
+                <img
+                  style="width: 100%"
+                  class="swiper__image"
+                  src="images/icon3.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-next1 nav_button swiper-button-next swiper_btn swiper_btn1234"
+          ></div>
+          <div
+            class="swiper-button-prev2 nav_button swiper-button-prev swiper_btn swiper_btn123"
+          ></div>
+        </div>
+      </div>
+      <div class="section5">
+        <div class="container section5_container section5_container1">
+          <div>
+            <p class="section5_title change_lang-txt37">
+              Какие стартапы мы ищем
+            </p>
+          </div>
+          <div
+            class="row"
+            style="
+              justify-content: space-between;
+              row-gap: 15px;
+              margin: 0 auto;
+            "
+          >
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 col11 section5_column"
+            >
+              <div>
+                <div>
+                  <p class="section5_text1 change_lang-txt38">
+                    Объемы инвестиций
+                  </p>
+                </div>
+                <hr class="section5_line" />
+              </div>
+              <div>
+                <div class="section5_div1">
+                  <span class="section5_text2 change_lang-txt39"
+                    >Предпосевная обработка:</span
+                  >
+                  <span class="section5_text3 change_lang-txt40"
+                    >$200-500K</span
+                  >
+                </div>
+                <div class="section5_div1">
+                  <span class="section5_text2 change_lang-txt41"
+                    >Предпосевная обработка:</span
+                  >
+                  <span class="section5_text3 change_lang-txt42">до $1М</span>
+                </div>
+                <div class="section5_div1">
+                  <span class="section5_text2 change_lang-txt43"
+                    >Предпосевная обработка:</span
+                  >
+                  <span class="section5_text3 change_lang-txt44">до $5M</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 col21 section5_column"
+            >
+              <div>
+                <p class="section5_text1 change_lang-txt45">Индустрии</p>
+              </div>
+              <hr class="section5_line" />
+              <p class="section5_text5 change_lang-txt46">
+                Мы смотрим только IT стартапы.
+              </p>
+              <a href="#!" class="section5_btn change_lang-txt47">Подробнее</a>
+            </div>
+            <div
+              class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 col31 section5_column"
+            >
+              <div>
+                <p class="section5_text1 change_lang-txt48">Дополнительно</p>
+                <hr class="section5_line" />
+                <div>
+                  <div>
+                    <span class="section5_text2 change_lang-txt49"
+                      >Обязательно:</span
+                    ><span class="section5_text3 change_lang-txt50">
+                      наличие как минимум первой выручки</span
+                    >
+                  </div>
+                  <div>
+                    <span class="section5_text2 change_lang-txt51"
+                      >Желательно:</span
+                    ><span class="section5_text3 change_lang-txt52">
+                      выход на зарубежный рынок в течение следующего года</span
+                    >
+                  </div>
+                  <div>
+                    <span class="section5_text2 change_lang-txt53">
+                      Отлично: </span
+                    ><span class="section5_text3 change_lang-txt54"
+                      >наличие международной выручки</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section6">
+        <div class="container section6__container section5_container">
+          <div class="section6_div1">
+            <p class="section6_text">2%</p>
+            <p class="section6_text2 change_lang-txt55">
+              Условия сотрудничества
+            </p>
+            <p class="section6_text3 change_lang-txt56">
+              Стартап платит 2% от суммы привлеченных инвестиций после закрытия
+              сделки.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section7">
+        <div class="container section7__container">
+          <div>
+            <p class="section7_title change_lang-txt57">
+              Ваши будущие инвесторы
+            </p>
+          </div>
+          <div class="row">
+            <div
+              class="col-xl-6 section7_col2"
+              style="
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+              "
+            >
+              <div class="accordion">
+                <div class="accordion-item1">
+                  <div class="accordion-header">
+                    <p
+                      class="change_lang-txt58"
+                      style="margin-bottom: 0 !important"
+                    >
+                      Венчурные фонды
+                    </p>
+                    <span class="accordion-icon">v</span>
+                  </div>
+                  <div class="accordion-content change_lang-txt59">
+                    Международные и российские фонды с капиталом от $10М и до
+                    $200M. Представлены фонды с фокусом на проекты от Pre-seed
+                    стадии до Series A.
+                  </div>
+                </div>
+                <div class="accordion-item1">
+                  <div class="accordion-header">
+                    <p
+                      class="change_lang-txt60"
+                      style="margin-bottom: 0 !important"
+                    >
+                      Бизнес-Ангелы
+                    </p>
+                    <span class="accordion-icon">v</span>
+                  </div>
+                  <div class="accordion-content change_lang-txt61">
+                    Международные и российские фонды с капиталом от $10М и до
+                    $200M. Представлены фонды с фокусом на проекты от Pre-seed
+                    стадии до Series A.
+                  </div>
+                </div>
+                <div class="accordion-item1">
+                  <div class="accordion-header">
+                    <p
+                      class="change_lang-txt62"
+                      style="margin-bottom: 0 !important"
+                    >
+                      Частные инвесторы
+                    </p>
+
+                    <span class="accordion-icon">v</span>
+                  </div>
+                  <div class="accordion-content change_lang-txt63">
+                    Международные и российские фонды с капиталом от $10М и до
+                    $200M. Представлены фонды с фокусом на проекты от Pre-seed
+                    стадии до Series A.
+                  </div>
+                </div>
+                <div class="accordion-item1">
+                  <div class="accordion-header">
+                    <p
+                      class="change_lang-txt64"
+                      style="margin-bottom: 0 !important"
+                    >
+                      Бизнес-Акселераторы
+                    </p>
+
+                    <span class="accordion-icon">v</span>
+                  </div>
+                  <div class="accordion-content change_lang-txt65">
+                    Международные и российские фонды с капиталом от $10М и до
+                    $200M. Представлены фонды с фокусом на проекты от Pre-seed
+                    стадии до Series A.
+                  </div>
+                </div>
+                <div class="accordion-item1">
+                  <div class="accordion-header">
+                    <p
+                      class="change_lang-txt66"
+                      style="margin-bottom: 0 !important"
+                    >
+                      Корпоративные фонды
+                    </p>
+
+                    <span class="accordion-icon">v</span>
+                  </div>
+                  <div class="accordion-content change_lang-txt67">
+                    Международные и российские фонды с капиталом от $10М и до
+                    $200M. Представлены фонды с фокусом на проекты от Pre-seed
+                    стадии до Series A.
+                  </div>
+                </div>
+              </div>
+              <a href="#!" class="section7_btn change_lang-txt68"
+                >Привлечь инвестиции</a
+              >
+            </div>
+            <div
+              class="col-xl-6 section7_col1"
+              style="
+                align-items: center;
+                justify-content: center;
+                display: flex;
+              "
+            >
+              <img src="images/Image8.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section8">
+        <div class="container section8_container">
+          <div>
+            <p class="section8_title change_lang-txt69">
+              Что говорят о нас инвесторы и стартапы
+            </p>
+          </div>
+          <div class="row section8_row">
+            <div
+              class="section8_column section8_column12 col-xl-4 col-lg-6 col-md-6 col-sm-12 col1 col-xs-12"
+            >
+              <div class="section8_div1">
+                <div>
+                  <img class="section8_image" src="images/face1.svg" alt="" />
+                </div>
+                <div>
+                  <p class="section8_text change_lang-txt70">Михаил Инишев</p>
+                  <p class="section8_text1 change_lang-txt71">
+                    Основатель, Boomerangme
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="section8_context section8_context12 change_lang-txt72"
+                >
+                  AliInvest помогли нам привлечь первый раунд инвестиций на
+                  $400k. Ребята взяли на себя работу по первичной коммуникации с
+                  инвесторами, а нас звали на встречи только с
+                  заинтересованными. В итоге мы сэкономили время и получили
+                  быстрый результат.
+                </p>
+              </div>
+            </div>
+            <div
+              class="section8_column section8_column12 col-xl-4 col-lg-6 col-md-6 col-sm-12 section8_col1 col2 col-xs-12"
+            >
+              <div class="section8_div1">
+                <div>
+                  <img class="section8_image" src="images/face2.svg" alt="" />
+                </div>
+                <div>
+                  <p class="section8_text change_lang-txt73">Сергей Дашков</p>
+                  <p class="section8_text1 change_lang-txt74">
+                    Генеральный партнер, JointJourney
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="section8_context section8_context12 change_lang-txt75"
+                >
+                  С командой AliInvest мы работаем по аналитике стартапов с
+                  начала 2022. Отмечу качество: глубокая аналитика, отличная
+                  насмотренность по многим направлениям, оперативность. Качество
+                  и скорость работы на высоком уровне, все комиты всегда
+                  выполняются в срок.
+                </p>
+              </div>
+            </div>
+            <div
+              class="section8_column col-xl-4 col-lg-12 section8_col12 col-md-12 col3 section8_column12 col-sm-12 col-xs-12"
+            >
+              <div class="section8_div1">
+                <div>
+                  <img class="section8_image" src="images/face3.svg" alt="" />
+                </div>
+                <div>
+                  <p class="section8_text change_lang-txt76">Юрий Шишкин</p>
+                  <p class="section8_text1 change_lang-txt77">
+                    Основатель, 24TTL
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="section8_context section8_context12 change_lang-txt78"
+                >
+                  Взаимодействовали на стадии seed — очень оперативный подбор
+                  потенциальных инвесторов, в короткие сроки провели звонки и
+                  дошли до результата. Готов рекомендовать!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row section8_row">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 section8_col13 col3 col4 section8_column12 section8_column1"
+            >
+              <div class="section8_div1">
+                <div>
+                  <img class="section8_image" src="images/face1.svg" alt="" />
+                </div>
+                <div>
+                  <p class="section8_text2 change_lang-txt79">Федор Яковлев</p>
+                  <p class="section8_text3 change_lang-txt80">
+                    Управляющий партнер, Startup Lab
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="section8_context1 section8_context12 change_lang-txt81"
+                >
+                  Мы познакомились около года назад. Таких знакомств было много,
+                  однако почти все они мало к чему приводили. Работа же с
+                  AliInvest стала для меня чем-то новым. Четкая и понятная
+                  коммуникация, интересные проекты, умные вопросы. И конечно,
+                  правильные проекты, которые попадают в наш фокус.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 section8_col14 col3 section8_column12 col4 section8_column1"
+            >
+              <div class="section8_div1">
+                <div>
+                  <img class="section8_image" src="images/face2.svg" alt="" />
+                </div>
+                <div>
+                  <p class="section8_text2 change_lang-txt82">
+                    Эдуард Золотухин
+                  </p>
+                  <p class="section8_text3 change_lang-txt83">
+                    Партнер, 3ED Ventures
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="section8_context1 section8_context12 change_lang-txt84"
+                >
+                  Взаимодействуем с Angel Invests на протяжение двух лет.
+                  Коллеги занимаются формированием воронки стартапов и их
+                  аналитикой, прекрасно выполняют свою работу. Мы регулярно
+                  обмениваемся сделками.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="btn1 change_lang-txt85" onclick="function1()">
+            Посмотреть все
+          </button>
+          <button class="btn2 change_lang-txt86" onclick=" function2();">
+            Скрыть
+          </button>
+        </div>
+      </div>
+      <div class="section9">
+        <div class="container section9__container">
+          <div class="row section9_row">
+            <div class="col-xl-6 section9_col">
+              <div class="section9_div2">
+                <p class="section9_text change_lang-txt87">
+                  Мы открыты к сотрудничеству
+                </p>
+                <p class="section9_text1 change_lang-txt88">
+                  Если вы вовлечены в венчурный рынок (но не стартап или
+                  инвестор), напишите нам. Мы будем рады найти точки общего
+                  взаимодействия.
+                </p>
+              </div>
+              <div class="section9_div1">
+                <a class="section9_btn change_lang-txt89" href="#!">Написать</a>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <span class="section9_span1"></span>
+              <span class="section9_span2"></span>
+              <span class="section9_span3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main end -->
+    <!-- footer start -->
+    <div class="footer_">
+      <div class="subfooter">
+        <div class="container">
+          <div
+            class="subfooter_div2"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="subfooter_div1">
+              <a class="subfooter_btn1 change_lang-txt90" href="#!"
+                >Я Стартап</a
+              >
+              <a
+                class="subfooter_btn2 change_lang-txt91"
+                href="Page-2/index.html"
+                >Я Инвестор</a
+              >
+            </div>
+            <div class="subfooter_div3">
+              <img class="footer_image" src="images/Logo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr class="footer_line" />
+      </div>
+      <div
+        class="footer"
+        style="height: 100px; align-items: center; display: flex"
+      >
+        <div
+          class="container footer_container flex-wrap"
+          style="padding-top: 15px"
+        >
+          <p
+            class="col-md-4 mb-0 footer_link text-body-secondary change_lang-txt92"
+          >
+            &copy; 2023. AliInvest. Все Права Защищены.
+          </p>
+          <ul class="nav footer__col col-md-6">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-body-secondary change_lang-txt93"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-body-secondary change_lang-txt94"
+                >Пользовательское соглашение</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        grabCursor: false,
+        loop: true,
+        allowTouchMove: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script> -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper1 = new Swiper(".mySwiper1", {
+        slidesPerView: 3,
+        loop: false,
+        allowTouchMove: false,
+        navigation: {
+          nextEl: ".swiper-button-next1",
+          prevEl: ".swiper-button-prev2",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <script>
+      /* (function ($) {
+        $(".accordion > li:eq(0) a").addClass("active").next().slideDown();
+
+        $(".accordion a").click(function (j) {
+          var dropDown = $(this).closest("li").find("p");
+
+          $(this).closest(".accordion").find("p").not(dropDown).slideUp();
+
+          if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+          } else {
+            $(this)
+              .closest(".accordion")
+              .find("a.active")
+              .removeClass("active");
+            $(this).addClass("active");
+          }
+
+          dropDown.stop(false, true).slideToggle();
+
+          j.preventDefault();
+        });
+      })(jQuery); */ $(document).ready(function () {
+        $(".accordion-header").click(function () {
+          const icon = $(this).find(".accordion-icon");
+          $(this).next(".accordion-content").slideToggle(200);
+
+          if (icon.text() === "v") {
+            icon.text("ʌ");
+          } else {
+            icon.text("v");
+          }
+
+          $(this).parent().siblings().find(".accordion-content").slideUp();
+          $(this).parent().siblings().find(".accordion-icon").text("v");
+        });
+      });
+    </script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/lang.js"></script>
+    <script src="javascript/animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
